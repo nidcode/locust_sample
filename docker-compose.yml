@@ -1,0 +1,7 @@
+version: '2'
+services:
+  locust:
+    build: .
+    command: -f ./locustfile.py SimpleHttpTask --host=https://APPRUNNER_DEFAULT_DOMAIN
+    ports:
+     - 8080:8089
