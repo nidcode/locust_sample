@@ -5,7 +5,7 @@ build:
     build:
       - pip install locust
 run:
-  runtime-version: 3.8
+  runtime-version: 3.11
   command: locust -f locustfile.py SimpleHttpTask --host=https://YOUR_ENDPOINT
   network:
     port: 8089
